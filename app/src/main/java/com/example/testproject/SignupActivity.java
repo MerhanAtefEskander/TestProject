@@ -182,7 +182,7 @@ public void signUpFunction(){
 private boolean validateEmail(){
         String emailInput =  email_edittext.getText().toString().trim();
         if(emailInput.isEmpty()){
-            email_edittext.setError("Field can't be empty");
+            email_edittext.setError("Field can't be empty !");
             return false;
         }
         else if (!EMAIL_ADDRESS.matcher(emailInput).matches()){
